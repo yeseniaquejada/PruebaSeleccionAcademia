@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Loop", cursive;
+}
+.container {
+  position: relative;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+.welcome-section figure {
+  width: 100px;
+}
+
+.welcome-section img {
+  width: 100%;
+}
+
+.formulario {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: rgb(86, 190, 182);
+  text-align: center;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input i {
+  width: 5%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.input input,
+select {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.formulario button {
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.formulario button:hover {
+  background-color: rgba(175, 166, 166, 0.863);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.predio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(84, 107, 150, 0.856);
+  padding: 40px;
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.predio button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgb(218, 15, 15);
+  transition: 0.4s;
+}
+
+.predio button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  background-color: rgb(150, 16, 16);
+}
+
+.totalPredios{
+    width: 97%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rosybrown;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.totalPredios h2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

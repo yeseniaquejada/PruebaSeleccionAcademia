@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.jpeg">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="welcome-section">
+            <figure>
+                <img src="./img/logo.jpeg" alt="logo">
+            </figure>
+            <h1>Conjunto residencial</h1>
+        </section>
+        <div class="totalPredios">
+            <h2>
+                <strong>
+                    Total predios 
+                </strong>
+                <p id="totalPredios">
+
+                </p>
+            </h2>
+        </div>
+        <form class="formulario">
+            <h2 id="tituloFormulario">
+                Ingresa los datos del predio # 20
+            </h2>
+
+            <div class="input">
+                <i class="fas fa-sort-numeric-up-alt"></i>
+                <input type="number" placeholder="Número de inmueble" id="numeroInmueble" required>
+
+            </div>
+
+            <div class="input">
+                <i class="fas fa-ruler-vertical"></i>
+                <input type="number" placeholder="Metros cuadrados" id="metrosCuadrados" required>
+            </div>
+
+            <div class="input">
+                <i class="fas fa-house-user"></i>
+                <select id="tipoInmueble">
+                    <option value="casa">
+                        Casa
+                    </option>
+                    <option value="apartamento">
+                        Apartamento
+                    </option>
+                </select>
+            </div>
+
+            <div class="input">
+                <i class="fas fa-users"></i>
+                <input type="number" placeholder="Cantidad de habitantes" id="cantidadHabitantes" required>
+            </div>
+
+            <button id="boton">
+                Calcular
+            </button>
+        </form>
+        <div class="predio" id="dos">
+            <div>
+                <button id="close">
+                    <i class="fas fa-times">
+
+                    </i>
+                </button>
+                <h3 id="resultado-numeroInmueble"></h3>
+                <br>
+                <h4>Valor administración</h4>
+                <h4>Valor cuota de aseo</h4>
+                <h4>Derechos de gimnasio</h4>
+                <br>
+                <h2>Total a pagar</h2>
+            </div>
+            <div>
+                <h3 id="resultado-mes"></h3>
+                <br>
+                <h4 id="resultado-administracion"></h4>
+                <h4 id="resultado-aseo"></h4>
+                <h4 id="resultado-gimnasio"></h4>
+                <br>
+                <h4 id="resultado-total"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
