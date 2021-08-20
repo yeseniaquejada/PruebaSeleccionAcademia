@@ -1,0 +1,65 @@
+Algoritmo Ejercicio2
+	Definir totalpredio, administracion, aseo, gimnasio, metrosCuadrados, edad, numeroHabitantes, numeroApartamento Como Entero
+	Definir tipoInmueble, genero Como Caracter
+	totalpredio=0
+	Para i<-1 Hasta 2 Con Paso 1 Hacer
+		administracion=0 
+		gimnasio=0 
+		aseo=0
+		
+		Escribir "ingrese el numero del inmueble"
+		Leer numeroApartamento
+		Escribir "ingrese los metros cuadrados del inmueble"
+		Leer metrosCuadrados
+		Escribir "ingrese el numero de habitantes"
+		Leer numeroHabitantes
+		Escribir "ingrese el tipo del inmueble"
+		Leer  tipoInmueble
+		administracion=metroscuadrados*1500
+		Si tipoInmueble=="apartamento" Entonces
+			administracion=administracion+50000
+		SiNo
+			administracion=administracion+100000
+		Fin Si
+		aseo=administracion*0.1
+		aseo=aseo+(metrosCuadrados*1000)
+		Para j<-1 Hasta numeroHabitantes Con Paso 1 Hacer
+			Escribir  "ingrese el genero del habitante",j 
+			Leer genero
+			Escribir  "ingrese la edad del habitante",j
+			Leer edad
+			Si genero=="masculino" Entonces
+				Si edad>=10 y edad<20 Entonces
+					gimnasio=gimnasio+20000
+				SiNo
+					Si edad>=20 y edad<40 Entonces
+				    gimnasio=gimnasio+15000
+					SiNo
+						Si edad>=40 y edad<=60 Entonces
+							gimnasio=gimnasio+10000
+						Fin Si
+					Fin Si
+				Fin Si
+			SiNo
+				Si edad>=10 y edad<18 Entonces
+					gimnasio=gimnasio+15000
+				SiNo
+					Si edad>=18 y edad<35 Entonces
+						gimnasio=gimnasio+12000
+					SiNo
+						Si edad>=35 y edad<=55 Entonces
+							gimnasio=gimnasio+8000
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Para
+        totalpredio=totalpredio+administracion+gimnasio+aseo
+		Escribir "señores apartamento #",numeroApartamento
+		Escribir "valor administracion",administracion
+		Escribir "valor cuota de aseo",aseo
+		Escribir "derechos de gimnasio",gimnasio
+		Escribir "total a pagar",administracion+gimnasio+aseo
+	Fin Para
+		Escribir "el valor total de los predios es:",totalpredio
+FinAlgoritmo
